@@ -1,0 +1,55 @@
+.painting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  max-height: 328px;
+
+  border: 1px solid #e1e1e1;
+
+  img {
+    width: 280px;
+    height: 160px;
+  }
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.painting_info {
+  padding: 20px 24px;
+
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: start;
+  }
+}
+
+.add_to_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 22px;
+
+  b {
+    margin-top: 12px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.old_price {
+  color: #a0a0a0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: line-through;
+}
+
+.buy_btn {
+  padding: 14px 30px;
+}
