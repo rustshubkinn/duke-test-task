@@ -1,4 +1,4 @@
-import { ReactComponent as MuseumLogo } from 'image/svg/museum-logo.svg';
+import { ReactComponent as MuseumLogo } from 'img/svg/museum-logo.svg';
 
 import classes from './NavBar.module.scss';
 
