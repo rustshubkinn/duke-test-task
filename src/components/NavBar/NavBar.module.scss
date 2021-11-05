@@ -1,0 +1,11 @@
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    &:not(:last-child) {
+      margin-right: 48px;
+    }
+  }
+}

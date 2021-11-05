@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+
+  &::after {
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+    display: block;
+    width: 100%;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    content: ' ';
+  }
+}
+
+.search_input {
+  width: 294px;
+  padding: 13px 16px;
+
+  color: #9f9f9f;
+
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.search_btn {
+  padding: 13px 36px;
+}
