@@ -51,5 +51,10 @@
 }
 
 .buy_btn {
-  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 118px;
+  min-height: 48px;
+  padding: 14px 10px;
 }
