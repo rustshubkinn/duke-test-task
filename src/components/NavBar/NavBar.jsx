@@ -1,9 +1,12 @@
-import { ReactComponent as MuseumLogo } from 'img/svg/museum-logo.svg';
+import classNames from 'classnames';
+import { string } from 'prop-types';
+
+import { ReactComponent as MuseumLogo } from 'img/svg/logo.svg';
 
 import classes from './NavBar.module.scss';
 
-export const NavBar = () => (
-  <div className={classes.nav_bar}>
+export const NavBar = ({ className }) => (
+  <div className={classNames(classes.nav_bar, className)}>
     <a href="/">
       <MuseumLogo />
     </a>
@@ -14,3 +17,11 @@ export const NavBar = () => (
     <a href="/">О галерее</a>
   </div>
 );
+
+NavBar.propTypes = {
+  className: string,
+};
+
+NavBar.defaultProps = {
+  className: null,
+};

@@ -6,7 +6,7 @@ import classes from './Header.module.scss';
 
 export const Header = () => (
   <section className={classes.header}>
-    <NavBar />
+    <NavBar className={classes.header_navbar} />
     <div className={classes.searchfield}>
       <Input
         type="search"
