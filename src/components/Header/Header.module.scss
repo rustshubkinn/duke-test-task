@@ -1,21 +1,12 @@
 .header {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.header_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px 0;
-
-  &::after {
-    position: absolute;
-    top: 120px;
-    left: 0;
-
-    display: block;
-    width: 100%;
-
-    border-bottom: 1px solid #e1e1e1;
-
-    content: ' ';
-  }
 }
 
 .header_navbar {
