@@ -1,9 +1,14 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
 body {
+  position: relative;
+
   width: 100%;
+  min-height: 100vh;
   margin: 0;
 
   color: #343030;
@@ -51,4 +56,8 @@ input {
   font-family: inherit;
 
   outline: 0;
+}
+
+.main_wrapper {
+  padding-bottom: 160px;
 }

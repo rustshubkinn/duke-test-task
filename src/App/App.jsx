@@ -6,9 +6,13 @@ import { Footer } from 'components/Footer/Footer';
 import './global.scss';
 
 export const App = () => (
-  <Container>
+  <>
     <Header />
-    <PaintingsList />
+    <main className="main_wrapper">
+      <Container>
+        <PaintingsList />
+      </Container>
+    </main>
     <Footer />
-  </Container>
+  </>
 );
