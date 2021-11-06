@@ -134,7 +134,7 @@
     "*.json": [
       "prettier --check"
     ],
-    "*.css": [
+    "*.{css,scss}": [
       "stylelint"
     ]
   }
