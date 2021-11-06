@@ -1,22 +1,31 @@
 /* eslint-disable react/button-has-type */
-import { node, string } from 'prop-types';
+import { arrayOf, bool, func, node, oneOfType, string } from 'prop-types';
 import classNames from 'classnames';
 
 import './Button.module.scss';
 
-export const Button = ({ children, type, className }) => (
-  <button type={type} className={classNames(className)}>
+export const Button = ({ onClick, children, type, className, disabled }) => (
+  <button
+    type={type}
+    onClick={onClick}
+    className={classNames(className)}
+    disabled={disabled}
+  >
     {children}
   </button>
 );
 
 Button.propTypes = {
-  children: node.isRequired,
+  children: oneOfType([node, arrayOf(node), string]).isRequired,
+  onClick: func,
+  disabled: bool,
   className: string,
   type: string,
 };
 
 Button.defaultProps = {
   className: null,
+  onClick: null,
+  disabled: false,
   type: 'button',
 };
