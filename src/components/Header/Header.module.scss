@@ -19,10 +19,14 @@
   width: 294px;
   padding: 13px 16px;
 
-  color: #9f9f9f;
+  color: #343030;
 
   font-size: 14px;
   line-height: 150%;
+
+  &:placeholder {
+    color: #9f9f9f;
+  }
 }
 
 .search_btn {
