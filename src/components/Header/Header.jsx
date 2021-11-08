@@ -8,11 +8,11 @@ import { Button } from 'components/UI/Button/Button';
 import classes from './Header.module.scss';
 
 export const Header = () => {
+  // eslint-disable-next-line no-unused-vars
   const [searchField, setSearchField] = useState('');
 
   const searchInputHandler = (e) => {
     setSearchField(e.target.value);
-    console.log(searchField);
   };
 
   return (
